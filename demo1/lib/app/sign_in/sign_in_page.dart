@@ -1,3 +1,4 @@
+import 'package:demo1/common_widgets/custome_elevated_button.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -40,10 +41,46 @@ class SignInPage extends StatelessWidget {
               ),
             ),
             style: ButtonStyle(
-              backgroundColor: MaterialStateProperty.all(Colors.white),
-            ),
+                backgroundColor: MaterialStateProperty.all(Colors.white),
+                shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                    RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(4.0),
+                        side: BorderSide(color: Colors.white70)))),
             onPressed: () {},
           ),
+          SizedBox(height: 8.0),
+          ElevatedButton(
+            child: Text(
+              'Sign in with Facebook',
+              style: TextStyle(
+                color: Colors.black87,
+              ),
+            ),
+            style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all(Colors.white),
+                shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                    RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(4.0),
+                        side: BorderSide(color: Colors.white70)))),
+            onPressed: () {},
+          ),
+          SizedBox(height: 8.0),
+          ElevatedButton(
+            child: Text(
+              'Sign in with Facebook',
+              style: TextStyle(
+                color: Colors.black87,
+              ),
+            ),
+            style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all(Colors.white),
+                shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                    RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(4.0),
+                        side: BorderSide(color: Colors.white70)))),
+            onPressed: () {},
+          ),
+
         ],
       ),
     );
